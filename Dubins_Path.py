@@ -95,7 +95,7 @@ def main():
         if ind == 0:
             print('Shortest path          :  RSL')
             print('Path length            : ', np.round(np.linalg.norm(val),3), 'm' )
-            print('Duration               : ', np.round(np.linalg.norm(counter[ind,0])/MAXVEL,3) + np.round(np.linalg.norm((counter[ind,[2,3,4]] - counter[ind,[5,6,7]]))/MAXVEL,3) + np.round(np.linalg.norm(counter[ind,1])/MAXVEL,3))
+            print('Duration               : ', np.round(np.round(np.linalg.norm(counter[ind,0])/MAXVEL,3) + np.round(np.linalg.norm((counter[ind,[2,3,4]] - counter[ind,[5,6,7]]))/MAXVEL,3) + np.round(np.linalg.norm(counter[ind,1])/MAXVEL,3),3), 's')
             print('Start Coordinate       : ', S, 'm' )
             print('Tangent 1 coordinate   : ', np.round(counter[ind,[2,3,4]],3)[0], 'm' )
             print('Tangent 2 coordinate   : ', np.round(counter[ind,[5,6,7]],3)[0], 'm' )
@@ -111,7 +111,7 @@ def main():
         elif ind == 1:
             print('Shortest path          :  LSR')
             print('Path length            : ', np.round(np.linalg.norm(val),3), 'm' )
-            print('Duration               : ', np.round(np.linalg.norm(counter[ind,0])/MAXVEL,3) + np.round(np.linalg.norm((counter[ind,[2,3,4]] - counter[ind,[5,6,7]]))/MAXVEL,3) + np.round(np.linalg.norm(counter[ind,1])/MAXVEL,3))
+            print('Duration               : ', np.round(np.round(np.linalg.norm(counter[ind,0])/MAXVEL,3) + np.round(np.linalg.norm((counter[ind,[2,3,4]] - counter[ind,[5,6,7]]))/MAXVEL,3) + np.round(np.linalg.norm(counter[ind,1])/MAXVEL,3),3), 's')
             print('Start Coordinate       : ', S, 'm' )
             print('Tangent 1 coordinate   : ', np.round(counter[ind,[2,3,4]],3)[0], 'm' )
             print('Tangent 2 coordinate   : ', np.round(counter[ind,[5,6,7]],3)[0], 'm' )
@@ -127,7 +127,7 @@ def main():
         elif ind == 2:
             print('Shortest path          :  RSR')
             print('Path length            : ', np.round(np.linalg.norm(val),3), 'm' )
-            print('Duration               : ', np.round(np.linalg.norm(counter[ind,0])/MAXVEL,3) + np.round(np.linalg.norm((counter[ind,[2,3,4]] - counter[ind,[5,6,7]]))/MAXVEL,3) + np.round(np.linalg.norm(counter[ind,1])/MAXVEL,3))
+            print('Duration               : ', np.round(np.round(np.linalg.norm(counter[ind,0])/MAXVEL,3) + np.round(np.linalg.norm((counter[ind,[2,3,4]] - counter[ind,[5,6,7]]))/MAXVEL,3) + np.round(np.linalg.norm(counter[ind,1])/MAXVEL,3),3), 's')
             print('Start Coordinate       : ', S, 'm' )
             print('Tangent 1 coordinate   : ', np.round(counter[ind,[2,3,4]],3)[0], 'm' )
             print('Tangent 2 coordinate   : ', np.round(counter[ind,[5,6,7]],3)[0], 'm' )
@@ -143,7 +143,7 @@ def main():
         elif ind == 3:
             print('Shortest path          :  LSL')
             print('Path length            : ', np.round(np.linalg.norm(val),3), 'm' )
-            print('Duration               : ', np.round(np.linalg.norm(counter[ind,0])/MAXVEL,3) + np.round(np.linalg.norm((counter[ind,[2,3,4]] - counter[ind,[5,6,7]]))/MAXVEL,3) + np.round(np.linalg.norm(counter[ind,1])/MAXVEL,3))
+            print('Duration               : ', np.round(np.round(np.linalg.norm(counter[ind,0])/MAXVEL,3) + np.round(np.linalg.norm((counter[ind,[2,3,4]] - counter[ind,[5,6,7]]))/MAXVEL,3) + np.round(np.linalg.norm(counter[ind,1])/MAXVEL,3),3), 's')
             print('Start Coordinate       : ', S, 'm' )
             print('Tangent 1 coordinate   : ', np.round(counter[ind,[2,3,4]],3)[0], 'm' )
             print('Tangent 2 coordinate   : ', np.round(counter[ind,[5,6,7]],3)[0], 'm' )
